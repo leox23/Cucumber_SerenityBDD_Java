@@ -1,9 +1,9 @@
 Feature: Restar
-  Yo como matematico
+  Yo como matemático
   Quiero Restar
   Para no errar en el calculo
 
-Scenario: Restar numeros enteros
+Scenario: Restar numerous enteros
   Given Quiero restar
   When Resto 2 menos 2
-  Then Deberia ver que el resultado de la resta es 0
+  Then Debera ver que el resultado de la resta es 0

@@ -1,26 +1,28 @@
 package cucumber.serenity.stepdefinitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.serenity.calculo.Resta;
+import org.junit.Assert;
 
 public class RetarStepDefinitions {
+    private Resta restador;
+    private int resultado;
+
     @Given("^Quiero restar$")
-    public void prepararResta() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void quieroRestar() {
+        restador = new Resta();
     }
 
     @When("^Resto (\\d+) menos (\\d+)$")
-    public void restar(int arg1, int arg2) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void restoMenos(int arg1, int arg2) {
+        resultado = restador.restar(arg1, arg2);
     }
 
-    @Then("^Deberia ver que el resultado de la resta es (\\d+)$")
-    public void verificarResta(int arg1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    @Then("^Debera ver que el resultado de la resta es (\\d+)$")
+    public void deberaVerQueElResultadoDeLaRestaEs(int arg1) {
+        Assert.assertEquals(arg1, resultado);
     }
+
 }
