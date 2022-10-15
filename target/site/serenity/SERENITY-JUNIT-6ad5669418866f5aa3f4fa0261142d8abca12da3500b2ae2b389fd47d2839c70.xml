@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Restar" skipped="0" tests="1" time="0.37" timestamp="2022-10-14 04:21:52"><testcase name="Restar numeros enteros"><failure message="expected:&lt;0&gt; but was:&lt;4&gt;" type="java.lang.AssertionError">expected:&lt;0&gt; but was:&lt;4&gt;</failure><system-err>expected:&lt;0&gt; but was:&lt;4&gt;&#13;
-cucumber.serenity.stepdefinitions.RestarStepDefinitions.verificarResta(RetarStepDefinitions.java:26)&#13;
-✽.Deberia ver que el resultado de la resta es 0(src/test/resources/features/restar.feature:9)&#13;
-</system-err></testcase></testsuite>
