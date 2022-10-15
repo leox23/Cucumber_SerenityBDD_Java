@@ -1,7 +1,7 @@
 package cucumber.serenity.calculo;
 
 public class Resta {
-    public int restar(int numeroUno, int numeroDos) {
-        return numeroUno - numeroDos;
+    public int restar(int primerNumero, int segundoNumero) {
+        return primerNumero - segundoNumero;
     }
 }
